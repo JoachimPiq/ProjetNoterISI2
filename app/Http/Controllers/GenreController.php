@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Metier\Genre;
-use App\Modeles\GenreDao;
+use App\Modeles\GenreDAO;
 use App\Http\Requests\InsertionGenreRequest;
 
 class GenreController extends Controller

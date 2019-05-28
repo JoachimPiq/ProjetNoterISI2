@@ -4,7 +4,6 @@ namespace App\Modeles;
 
 use App\Metier\Conference;
 use App\Metier\Genre;
-use Illuminate\Database\Eloquent\Model;
 use DB;
 
 class GenreDAO extends DAO
@@ -27,6 +26,6 @@ class GenreDAO extends DAO
     }
     public function creerGenre(Genre $unGenre)
     {
-        DB::table('Genre')->insert(['gente_lib'=>$unGenre->getLibeleGenre(),'id_genre'=>$unGenre->getIdGenre()]);
+        DB::table('genre')->insert(['lib_genre'=>$unGenre->getLibelleGenre(),'id_genre'=>$unGenre->getIdGenre()]);
     }
 }
